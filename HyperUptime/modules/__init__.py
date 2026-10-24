@@ -1,1 +1,0 @@
-# Hyper Uptime modules
