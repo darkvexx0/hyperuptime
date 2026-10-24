@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: hyper-uptime
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: OWNER_ID
+        value: "1494235156074991638"
+      - key: GUILD_ID
+        value: "1497234535165988864"
+      - key: PORT
+        value: "10000"
